@@ -21,6 +21,7 @@ public class QuickStartDemoApplication {
     
     @RequestMapping("/hello")
     public String hello(@RequestParam(value = "name",defaultValue="world") String name ) {
+    	System.out.println("fsdf");
     	return String.format("Hello %s! demo", name);
     }
     @RequestMapping("/")
